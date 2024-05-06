@@ -44,7 +44,13 @@ $discs = [
     ]
 ];
 
+$response = $discs;
+
+if (isset($_GET['discIndex'])) {
+    $discIndex = $_GET['discIndex'];
+    $response = $discs[$discIndex];
+}
+
 header('Content-Type: application/json');
 
-echo json_encode($discs);
-?>
+echo json_encode($response);

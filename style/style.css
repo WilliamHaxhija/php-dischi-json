@@ -1,0 +1,23 @@
+#active {
+    background-color: rgba(0, 0, 0, 0.784);
+    width: 98%;
+    height: 95%;
+}
+
+.col-3:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.container > span {
+    top: 15px;
+    right: 15px;
+}
+
+.container > span:hover {
+    cursor: pointer;
+    background-color: rgb(135, 133, 133) !important;
+    color: black;
+    border: none !important;
+}
